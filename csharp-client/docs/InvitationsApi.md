@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.InvitationsApi
+# mantle.lib.Api.InvitationsApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Invite a user to join the platform. The entered email will be used to confirm th
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -32,8 +32,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new InvitationsApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new InvitationCreateRequest(); // InvitationCreateRequest |  (optional) 
 
             try
@@ -55,7 +56,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**InvitationCreateRequest**](InvitationCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -85,7 +86,7 @@ The invited user won't be able to join the platform anymore. An invitation can b
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -95,9 +96,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new InvitationsApi();
             var invitationId = invitationId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -118,7 +120,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invitationId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -147,7 +149,7 @@ Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -157,8 +159,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new InvitationsApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -179,7 +182,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -202,11 +205,13 @@ No authorization required
 
 Get an invitation's details
 
+
+
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -216,9 +221,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new InvitationsApi();
             var invitationId = invitationId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -240,7 +246,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invitationId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 

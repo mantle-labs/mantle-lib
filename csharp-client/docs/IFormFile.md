@@ -3,8 +3,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ContentType** | **string** |  | [optional] 
 **ContentDisposition** | **string** |  | [optional] 
+**ContentType** | **string** |  | [optional] 
 **Headers** | **Dictionary&lt;string, List&lt;string&gt;&gt;** |  | [optional] 
 **Length** | **long?** |  | [optional] 
 **Name** | **string** |  | [optional] 

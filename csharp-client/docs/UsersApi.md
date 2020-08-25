@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.UsersApi
+# mantle.lib.Api.UsersApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +25,7 @@ Delete a specific user. This will prevent this user from accessing the platform 
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -35,9 +35,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -58,7 +59,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -87,7 +88,7 @@ This will prevent this user from accessing the platform and will delete their AP
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -97,9 +98,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -120,7 +122,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -149,7 +151,7 @@ If their roles are changed, it will also delete their access token and they will
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -159,9 +161,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new EditUserRequest(); // EditUserRequest |  (optional) 
 
             try
@@ -183,7 +186,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**EditUserRequest**](EditUserRequest.md)|  | [optional] 
 
 ### Return type
@@ -213,7 +216,7 @@ This will let this user access the platform again. If the user needs an API key,
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -223,9 +226,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -246,7 +250,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -275,7 +279,7 @@ Details on the authenticated user                Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -285,8 +289,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -307,7 +312,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -336,7 +341,7 @@ Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -346,8 +351,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var isEnabled = true;  // bool? |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -371,7 +377,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **isEnabled** | **bool?**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -403,7 +409,7 @@ Get a specific user's details.                Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -413,9 +419,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new UsersApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -437,7 +444,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 

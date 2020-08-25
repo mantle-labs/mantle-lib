@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.ApiKeysApi
+# mantle.lib.Api.ApiKeysApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -31,8 +31,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ApiKeysApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new CreateApiKeyRequest(); // CreateApiKeyRequest |  (optional) 
 
             try
@@ -53,7 +54,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**CreateApiKeyRequest**](CreateApiKeyRequest.md)|  | [optional] 
 
 ### Return type
@@ -83,7 +84,7 @@ Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -93,9 +94,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ApiKeysApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -116,7 +118,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -145,7 +147,7 @@ Requires the User Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -155,8 +157,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ApiKeysApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -177,7 +180,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 

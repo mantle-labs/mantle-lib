@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **BlockchainStatus** | **string** |  | [optional] 
 **AssetId** | **string** |  | [optional] 
 **AssetDisplayName** | **string** |  | [optional] 
+**MetaData** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 **BatchId** | **string** |  | [optional] 
 **Amount** | **double?** |  | [optional] 

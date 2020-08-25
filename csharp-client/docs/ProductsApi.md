@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.ProductsApi
+# mantle.lib.Api.ProductsApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,11 +17,13 @@ Method | HTTP request | Description
 
 Get the products for the authenticated user
 
+
+
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -31,8 +33,9 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ProductsApi();
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -53,7 +56,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -82,7 +85,7 @@ Requires the Admin role
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -92,9 +95,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -116,7 +120,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -145,7 +149,7 @@ Requires the Admin role
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -155,9 +159,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new UpdateKeeperProductRequest(); // UpdateKeeperProductRequest |  (optional) 
 
             try
@@ -180,7 +185,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**UpdateKeeperProductRequest**](UpdateKeeperProductRequest.md)|  | [optional] 
 
 ### Return type
@@ -210,7 +215,7 @@ When the Mode is set to API: Signatures must be provided on Contract Creation, A
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -220,9 +225,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new UpdateSealerProductRequest(); // UpdateSealerProductRequest |  (optional) 
 
             try
@@ -245,7 +251,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**UpdateSealerProductRequest**](UpdateSealerProductRequest.md)|  | [optional] 
 
 ### Return type
@@ -275,7 +281,7 @@ Requires the Admin role
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -285,9 +291,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new UpdateTrackerProductRequest(); // UpdateTrackerProductRequest |  (optional) 
 
             try
@@ -310,7 +317,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**UpdateTrackerProductRequest**](UpdateTrackerProductRequest.md)|  | [optional] 
 
 ### Return type

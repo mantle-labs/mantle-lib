@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.KeeperApi
+# mantle.lib.Api.KeeperApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,8 +16,9 @@ Method | HTTP request | Description
 [**GetAllFiles**](KeeperApi.md#getallfiles) | **GET** /keeper/{productId}/files | [FILES] Get all files
 [**GetAllFolders**](KeeperApi.md#getallfolders) | **GET** /keeper/{productId}/folders | [FOLDERS] Get all folders
 [**GetAllVersions**](KeeperApi.md#getallversions) | **GET** /keeper/{productId}/files/{fileId}/versions | [VERSIONS] Get all the versions&#39; details for a file
-[**GetFileById**](KeeperApi.md#getfilebyid) | **GET** /keeper/{productId}/files/{fileId} | [FILES] Get a file&#39;s details.
+[**GetFileById**](KeeperApi.md#getfilebyid) | **GET** /keeper/{productId}/files/{fileId} | [FILES] Get a file&#39;s details
 [**GetFolderById**](KeeperApi.md#getfolderbyid) | **GET** /keeper/{productId}/folders/{folderId} | [FOLDERS] Get folder details
+[**GetLinkToDownloadOriginalFile**](KeeperApi.md#getlinktodownloadoriginalfile) | **GET** /keeper/{productId}/files/download/{fileId} | [FILES] Give a link to download the file uploaded to the gcloud bucket
 
 
 <a name="compareversion"></a>
@@ -32,7 +33,7 @@ It will compare their fingerprint against each other to find the differences.  T
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -42,12 +43,13 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var versionId = versionId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -73,7 +75,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -103,7 +105,7 @@ Compare a local file to the latest version of a file that's been stored in the b
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -113,11 +115,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -142,7 +145,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -172,7 +175,7 @@ Compare a local file to the original version of a file that's been stored in the
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -182,11 +185,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -211,7 +215,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -241,7 +245,7 @@ This will create a cryptographic representation of the file and store its finger
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -251,12 +255,13 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var accuracy = accuracy_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var folderId = folderId_example;  // string |  (optional) 
 
             try
@@ -282,7 +287,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **folderId** | **string**|  | [optional] 
 
 ### Return type
@@ -312,7 +317,7 @@ A folder is necessary to add files in Keeper.                Requires the Keeper
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -322,9 +327,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new KeeperFolderCreateRequest(); // KeeperFolderCreateRequest |  (optional) 
 
             try
@@ -347,7 +353,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**KeeperFolderCreateRequest**](KeeperFolderCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -377,7 +383,7 @@ This new version will also have its fingerprint stored in the blockchain.       
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -387,11 +393,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -415,7 +422,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -444,7 +451,7 @@ Its fingerprint will stay in the blockchain, but it will not be accessible and v
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -454,10 +461,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -479,7 +487,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -508,7 +516,7 @@ This will also delete all the files it contains.                Requires the Kee
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -518,10 +526,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
             var folderId = folderId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -543,7 +552,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
  **folderId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -572,7 +581,7 @@ Verify if the file's fingerprint exist.                Requires the Keeper Admin
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -582,11 +591,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var accuracy = accuracy_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var folderId = folderId_example;  // string |  (optional) 
 
             try
@@ -611,7 +621,7 @@ Name | Type | Description  | Notes
  **accuracy** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **folderId** | **string**|  | [optional] 
 
 ### Return type
@@ -641,7 +651,7 @@ Get all the files stored in Keeper.                Requires the Keeper Admin Rol
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -651,9 +661,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var displayName = displayName_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -679,7 +690,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **displayName** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -712,7 +723,7 @@ Get all folders that have been created in Keeper.                Requires the Ke
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -722,9 +733,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var name = name_example;  // string |  (optional) 
 
             try
@@ -747,7 +759,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **name** | **string**|  | [optional] 
 
 ### Return type
@@ -777,7 +789,7 @@ Requires the Keeper Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -787,10 +799,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -813,7 +826,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -834,7 +847,7 @@ No authorization required
 # **GetFileById**
 > KeeperFile GetFileById (string fileId, string productId, string xApiKey)
 
-[FILES] Get a file's details.
+[FILES] Get a file's details
 
 Requires the Keeper Admin Role.
 
@@ -842,7 +855,7 @@ Requires the Keeper Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -852,14 +865,15 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
-                // [FILES] Get a file's details.
+                // [FILES] Get a file's details
                 KeeperFile result = apiInstance.GetFileById(fileId, productId, xApiKey);
                 Debug.WriteLine(result);
             }
@@ -878,7 +892,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -907,7 +921,7 @@ Requires the Keeper Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -917,10 +931,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
             var folderId = folderId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -943,11 +958,77 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
  **folderId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
 [**KeeperFolder**](KeeperFolder.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getlinktodownloadoriginalfile"></a>
+# **GetLinkToDownloadOriginalFile**
+> string GetLinkToDownloadOriginalFile (string fileId, string productId, string xApiKey, string originalFileId = null)
+
+[FILES] Give a link to download the file uploaded to the gcloud bucket
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mantle.lib.Api;
+using mantle.lib.Client;
+using mantle.lib.Model;
+
+namespace Example
+{
+    public class GetLinkToDownloadOriginalFileExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new KeeperApi();
+            var fileId = fileId_example;  // string | 
+            var productId = productId_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+            var originalFileId = originalFileId_example;  // string |  (optional) 
+
+            try
+            {
+                // [FILES] Give a link to download the file uploaded to the gcloud bucket
+                string result = apiInstance.GetLinkToDownloadOriginalFile(fileId, productId, xApiKey, originalFileId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling KeeperApi.GetLinkToDownloadOriginalFile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileId** | **string**|  | 
+ **productId** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
+ **originalFileId** | **string**|  | [optional] 
+
+### Return type
+
+**string**
 
 ### Authorization
 

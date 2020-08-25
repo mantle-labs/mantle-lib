@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.TrackerApi
+# mantle.lib.Api.TrackerApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -51,7 +51,7 @@ This asset will then be issuable and transferable between entities.             
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -61,9 +61,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -86,7 +87,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -106,7 +107,7 @@ No authorization required
 
 <a name="createassetbatchtransfer"></a>
 # **CreateAssetBatchTransfer**
-> void CreateAssetBatchTransfer (string assetId, string productId, string xApiKey, TrackerBatchTransferRequest request = null, string ownedId = null)
+> void CreateAssetBatchTransfer (string assetId, string productId, string xApiKey, TrackerBatchTransferRequest request = null, string ownedDisplayName = null)
 
 [ASSETS] Create a transfer for one or many batches for an asset
 
@@ -116,7 +117,7 @@ The authenticated must have the specific batches                Requires the Tra
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -126,17 +127,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerBatchTransferRequest(); // TrackerBatchTransferRequest |  (optional) 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [ASSETS] Create a transfer for one or many batches for an asset
-                apiInstance.CreateAssetBatchTransfer(assetId, productId, xApiKey, request, ownedId);
+                apiInstance.CreateAssetBatchTransfer(assetId, productId, xApiKey, request, ownedDisplayName);
             }
             catch (Exception e)
             {
@@ -153,9 +155,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerBatchTransferRequest**](TrackerBatchTransferRequest.md)|  | [optional] 
- **ownedId** | **string**|  | [optional] 
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -174,7 +176,7 @@ No authorization required
 
 <a name="createassettransfer"></a>
 # **CreateAssetTransfer**
-> List<AssetTransaction> CreateAssetTransfer (string assetId, string productId, string xApiKey, TrackerTransferRequest request = null, string ownedId = null)
+> List<AssetTransaction> CreateAssetTransfer (string assetId, string productId, string xApiKey, TrackerTransferRequest request = null, string ownedDisplayName = null)
 
 [ASSETS] Create a transfer for an asset
 
@@ -184,7 +186,7 @@ Requires the Tracker Admin Role or Tracker User Role.  If you want to transfer t
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -194,17 +196,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerTransferRequest(); // TrackerTransferRequest |  (optional) 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [ASSETS] Create a transfer for an asset
-                List&lt;AssetTransaction&gt; result = apiInstance.CreateAssetTransfer(assetId, productId, xApiKey, request, ownedId);
+                List&lt;AssetTransaction&gt; result = apiInstance.CreateAssetTransfer(assetId, productId, xApiKey, request, ownedDisplayName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -222,9 +225,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerTransferRequest**](TrackerTransferRequest.md)|  | [optional] 
- **ownedId** | **string**|  | [optional] 
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -253,7 +256,7 @@ Requires the Tracker Admin Role or Tracker User Role.  If you want to transfer t
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -263,9 +266,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var requests = new List<TrackerBatchTransferBulkRequest>(); // List<TrackerBatchTransferBulkRequest> |  (optional) 
             var ownedId = ownedId_example;  // string |  (optional) 
 
@@ -289,8 +293,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **requests** | [**List&lt;TrackerBatchTransferBulkRequest&gt;**](TrackerBatchTransferBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **requests** | [**List<TrackerBatchTransferBulkRequest>**](TrackerBatchTransferBulkRequest.md)|  | [optional] 
  **ownedId** | **string**|  | [optional] 
 
 ### Return type
@@ -310,7 +314,7 @@ No authorization required
 
 <a name="createentity"></a>
 # **CreateEntity**
-> NonUser CreateEntity (string productId, string xApiKey, CreateEnttityRequest request = null)
+> NonUser CreateEntity (string productId, string xApiKey, CreateEntityRequest request = null)
 
 [ENTITIES] Create an entity
 
@@ -318,7 +322,7 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -328,10 +332,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
-            var request = new CreateEnttityRequest(); // CreateEnttityRequest |  (optional) 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+            var request = new CreateEntityRequest(); // CreateEntityRequest |  (optional) 
 
             try
             {
@@ -353,8 +358,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **request** | [**CreateEnttityRequest**](CreateEnttityRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **request** | [**CreateEntityRequest**](CreateEntityRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -383,7 +388,7 @@ This asset will then be issuable and transferable between entities.             
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -393,9 +398,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerMultiAssetCreateRequest(); // TrackerMultiAssetCreateRequest |  (optional) 
 
             try
@@ -418,7 +424,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerMultiAssetCreateRequest**](TrackerMultiAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -438,7 +444,7 @@ No authorization required
 
 <a name="createmultiassetbatchtransfer"></a>
 # **CreateMultiAssetBatchTransfer**
-> void CreateMultiAssetBatchTransfer (string assetId, string productId, string xApiKey, TrackerBatchTransferRequest request = null, string ownedId = null)
+> void CreateMultiAssetBatchTransfer (string assetId, string productId, string xApiKey, TrackerBatchTransferRequest request = null, string ownedDisplayName = null)
 
 [MULTIASSETS] Create a transfer for one or many batches for a multi asset
 
@@ -448,7 +454,7 @@ The authenticated must have the specific batches                Requires the Tra
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -458,17 +464,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerBatchTransferRequest(); // TrackerBatchTransferRequest |  (optional) 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [MULTIASSETS] Create a transfer for one or many batches for a multi asset
-                apiInstance.CreateMultiAssetBatchTransfer(assetId, productId, xApiKey, request, ownedId);
+                apiInstance.CreateMultiAssetBatchTransfer(assetId, productId, xApiKey, request, ownedDisplayName);
             }
             catch (Exception e)
             {
@@ -485,9 +492,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerBatchTransferRequest**](TrackerBatchTransferRequest.md)|  | [optional] 
- **ownedId** | **string**|  | [optional] 
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -506,7 +513,7 @@ No authorization required
 
 <a name="createmultiassettransfer"></a>
 # **CreateMultiAssetTransfer**
-> List<AssetTransaction> CreateMultiAssetTransfer (string assetId, string productId, string xApiKey, TrackerTransferRequest request = null, string ownedId = null)
+> List<AssetTransaction> CreateMultiAssetTransfer (string assetId, string productId, string xApiKey, TrackerTransferRequest request = null, string ownedDisplayName = null)
 
 [MULTIASSETS] Create a transfer for a multi asset
 
@@ -516,7 +523,7 @@ Requires the Tracker Admin Role or Tracker User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -526,17 +533,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerTransferRequest(); // TrackerTransferRequest |  (optional) 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [MULTIASSETS] Create a transfer for a multi asset
-                List&lt;AssetTransaction&gt; result = apiInstance.CreateMultiAssetTransfer(assetId, productId, xApiKey, request, ownedId);
+                List&lt;AssetTransaction&gt; result = apiInstance.CreateMultiAssetTransfer(assetId, productId, xApiKey, request, ownedDisplayName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -554,9 +562,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerTransferRequest**](TrackerTransferRequest.md)|  | [optional] 
- **ownedId** | **string**|  | [optional] 
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -585,7 +593,7 @@ It won't be issuable and transferable anymore, but all transactions made in the 
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -595,10 +603,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -620,7 +629,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -647,7 +656,7 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -657,10 +666,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var id = id_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -682,7 +692,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -711,7 +721,7 @@ It won't be issuable and transferable anymore, but all transactions made in the 
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -721,10 +731,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -746,7 +757,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -775,7 +786,7 @@ Only the name can be changed.                Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -785,10 +796,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -811,7 +823,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -839,7 +851,7 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -849,10 +861,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var id = id_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new UpdateEntityRequest(); // UpdateEntityRequest |  (optional) 
 
             try
@@ -875,7 +888,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**UpdateEntityRequest**](UpdateEntityRequest.md)|  | [optional] 
 
 ### Return type
@@ -905,7 +918,7 @@ Only the name can be changed.                Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -915,10 +928,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -941,7 +955,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -971,7 +985,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -981,9 +995,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
             var assetDisplayNames = assetDisplayNames_example;  // string | Filter assets using their display names.  Example: Asset1,Asset2,Asset3 (optional) 
@@ -1008,7 +1023,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
  **assetDisplayNames** | **string**| Filter assets using their display names.  Example: Asset1,Asset2,Asset3 | [optional] 
@@ -1040,7 +1055,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1050,9 +1065,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var beforeDateTime = 2013-10-20T19:20:30+01:00;  // DateTime? |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -1078,7 +1094,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **beforeDateTime** | **DateTime?**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -1111,7 +1127,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1121,9 +1137,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var beforeDateTime = 2013-10-20T19:20:30+01:00;  // DateTime? |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -1148,7 +1165,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **beforeDateTime** | **DateTime?**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -1180,7 +1197,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1190,10 +1207,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1216,7 +1234,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1235,7 +1253,7 @@ No authorization required
 
 <a name="getassetdetailedbalance"></a>
 # **GetAssetDetailedBalance**
-> List<Batch> GetAssetDetailedBalance (string assetId, string productId, string xApiKey, string ownedId = null)
+> List<Batch> GetAssetDetailedBalance (string assetId, string productId, string xApiKey, string ownedDisplayName = null)
 
 [BALANCES] Get all authenticated user's asset balance batches
 
@@ -1245,7 +1263,7 @@ Requires the Tracker Admin Role or Tracker User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1255,16 +1273,17 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [BALANCES] Get all authenticated user's asset balance batches
-                List&lt;Batch&gt; result = apiInstance.GetAssetDetailedBalance(assetId, productId, xApiKey, ownedId);
+                List&lt;Batch&gt; result = apiInstance.GetAssetDetailedBalance(assetId, productId, xApiKey, ownedDisplayName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1282,8 +1301,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **ownedId** | **string**|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1312,7 +1331,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1322,11 +1341,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var batchId = batchId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1350,7 +1370,7 @@ Name | Type | Description  | Notes
  **assetId** | **string**|  | 
  **batchId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1369,7 +1389,7 @@ No authorization required
 
 <a name="getassetissuedbatches"></a>
 # **GetAssetIssuedBatches**
-> IssuedBatchesResponse GetAssetIssuedBatches (string assetId, string productId, string xApiKey)
+> IssuedBatchesResponse GetAssetIssuedBatches (string assetId, string productId, string xApiKey, string sortBy = null, string sort = null)
 
 [ASSETS] Get all issued batches for an asset
 
@@ -1379,7 +1399,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1389,15 +1409,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+            var sortBy = sortBy_example;  // string |  (optional) 
+            var sort = sort_example;  // string |  (optional) 
 
             try
             {
                 // [ASSETS] Get all issued batches for an asset
-                IssuedBatchesResponse result = apiInstance.GetAssetIssuedBatches(assetId, productId, xApiKey);
+                IssuedBatchesResponse result = apiInstance.GetAssetIssuedBatches(assetId, productId, xApiKey, sortBy, sort);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1415,7 +1438,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
+ **sortBy** | **string**|  | [optional] 
+ **sort** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1434,7 +1459,7 @@ No authorization required
 
 <a name="getbalances"></a>
 # **GetBalances**
-> List<AssetBalance> GetBalances (string productId, string xApiKey, string ownedId = null)
+> List<AssetBalance> GetBalances (string productId, string xApiKey, string ownedDisplayName = null)
 
 [BALANCES] Get all authenticated user's assets balances
 
@@ -1444,7 +1469,7 @@ Requires the Tracker Admin Role or Tracker User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1454,15 +1479,16 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
-            var ownedId = ownedId_example;  // string |  (optional) 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+            var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
             {
                 // [BALANCES] Get all authenticated user's assets balances
-                List&lt;AssetBalance&gt; result = apiInstance.GetBalances(productId, xApiKey, ownedId);
+                List&lt;AssetBalance&gt; result = apiInstance.GetBalances(productId, xApiKey, ownedDisplayName);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1479,8 +1505,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **ownedId** | **string**|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
 
@@ -1509,7 +1535,7 @@ Requires the Track Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1519,10 +1545,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1545,7 +1572,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1574,7 +1601,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1584,11 +1611,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var batchId = batchId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1612,7 +1640,7 @@ Name | Type | Description  | Notes
  **assetId** | **string**|  | 
  **batchId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1641,7 +1669,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1651,10 +1679,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1677,7 +1706,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1704,7 +1733,7 @@ No authorization required
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1714,9 +1743,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1738,7 +1768,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1767,7 +1797,7 @@ Requires the Tracker Admin Role or Tracker User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1777,10 +1807,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1803,7 +1834,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1832,7 +1863,7 @@ Requires the Tracker Admin Role or Tracker User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1842,10 +1873,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1868,7 +1900,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1887,7 +1919,7 @@ No authorization required
 
 <a name="issueasset"></a>
 # **IssueAsset**
-> void IssueAsset (string assetId, string productId, string xApiKey, TrackerAssetIssueRequest request = null)
+> AssetIssueResponse IssueAsset (string assetId, string productId, string xApiKey, TrackerAssetIssueRequest request = null)
 
 [ASSETS] Issue an amount of an asset
 
@@ -1897,7 +1929,7 @@ Requires the Tracker Admin Role. If you want to transfer to an entity, you shoul
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1907,16 +1939,18 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerAssetIssueRequest(); // TrackerAssetIssueRequest |  (optional) 
 
             try
             {
                 // [ASSETS] Issue an amount of an asset
-                apiInstance.IssueAsset(assetId, productId, xApiKey, request);
+                AssetIssueResponse result = apiInstance.IssueAsset(assetId, productId, xApiKey, request);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -1933,12 +1967,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerAssetIssueRequest**](TrackerAssetIssueRequest.md)|  | [optional] 
 
 ### Return type
 
-void (empty response body)
+[**AssetIssueResponse**](AssetIssueResponse.md)
 
 ### Authorization
 
@@ -1963,7 +1997,7 @@ Requires the Tracker Admin Role.  If you want to transfer to an entity, you shou
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1973,9 +2007,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var requests = new List<TrackerAssetIssueBulkRequest>(); // List<TrackerAssetIssueBulkRequest> |  (optional) 
 
             try
@@ -1998,8 +2033,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **requests** | [**List&lt;TrackerAssetIssueBulkRequest&gt;**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **requests** | [**List<TrackerAssetIssueBulkRequest>**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -2028,7 +2063,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -2038,10 +2073,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var request = new TrackerAssetIssueRequest(); // TrackerAssetIssueRequest |  (optional) 
 
             try
@@ -2064,7 +2100,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **request** | [**TrackerAssetIssueRequest**](TrackerAssetIssueRequest.md)|  | [optional] 
 
 ### Return type
@@ -2094,7 +2130,7 @@ Requires the Tracker Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -2104,9 +2140,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var requests = new List<TrackerAssetIssueBulkRequest>(); // List<TrackerAssetIssueBulkRequest> |  (optional) 
 
             try
@@ -2129,8 +2166,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
- **requests** | [**List&lt;TrackerAssetIssueBulkRequest&gt;**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | [default to ]
+ **requests** | [**List<TrackerAssetIssueBulkRequest>**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -2159,7 +2196,7 @@ This operation will refund the amounts that have been sent from a user to anothe
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -2169,10 +2206,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new TrackerApi();
             var transactionId = transactionId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -2194,7 +2232,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transactionId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 

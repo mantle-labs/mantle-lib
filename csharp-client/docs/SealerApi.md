@@ -1,6 +1,6 @@
-# mantle.lib.Mantle.lib.SealerApi
+# mantle.lib.Api.SealerApi
 
-All URIs are relative to *http://api.mantleblockchain.com*
+All URIs are relative to *http://localhost:5000/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,6 +18,7 @@ Method | HTTP request | Description
 [**GetAllTemplates**](SealerApi.md#getalltemplates) | **GET** /sealer/{productId}/templates | [TEMPLATES] Get all templates
 [**GetAuthenticatedUserContracts**](SealerApi.md#getauthenticatedusercontracts) | **GET** /sealer/{productId}/contracts/self | [CONTRACTS] Get all of the authenticated user’s contracts
 [**GetContractsByTemplateId**](SealerApi.md#getcontractsbytemplateid) | **GET** /sealer/{productId}/templates/{templateId}/contracts | [TEMPLATES] Get contracts attached to a template
+[**GetLinkToDownloadOriginalFile**](SealerApi.md#getlinktodownloadoriginalfile) | **GET** /sealer/{productId}/contracts/download/{fileId} | [CONTRACTS] Give a link to download the file uploaded to the gcloud bucket
 [**GetTemplateById**](SealerApi.md#gettemplatebyid) | **GET** /sealer/{productId}/templates/{templateId} | [TEMPLATES] Get a template
 [**SignContractWhenAuthenticated**](SealerApi.md#signcontractwhenauthenticated) | **POST** /sealer/{productId}/contracts/{contractId}/sign | [CONTRACTS] Sign a contract
 
@@ -34,7 +35,7 @@ Compare a local contract file to the unsigned contract document.                
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -44,11 +45,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -73,7 +75,7 @@ Name | Type | Description  | Notes
  **contractId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -103,7 +105,7 @@ Compare a local signature file to all the signatures of the contract to see if o
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -113,11 +115,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -142,7 +145,7 @@ Name | Type | Description  | Notes
  **contractId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -172,7 +175,7 @@ Requires the Sealer Admin Role or the Sealer User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -182,11 +185,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var signatureId = signatureId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -211,7 +215,7 @@ Name | Type | Description  | Notes
  **signatureId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -241,7 +245,7 @@ Requires the Sealer Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -251,11 +255,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -280,7 +285,7 @@ Name | Type | Description  | Notes
  **templateId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -310,7 +315,7 @@ The contract can also be signed at the same time if signature files are provided
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -320,13 +325,14 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var signerEmails = new List<string>(); // List<string> | 
             var signatures = new List<string>(); // List<string> | The files to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var signatureRequestMessage = signatureRequestMessage_example;  // string |  (optional) 
             var templateId = templateId_example;  // string |  (optional) 
 
@@ -351,10 +357,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
- **signerEmails** | [**List&lt;string&gt;**](string.md)|  | 
- **signatures** | [**List&lt;string&gt;**](string.md)| The files to upload. How http file upload works: https://goo.gl/UYQ2nX | 
+ **signerEmails** | [**List<string>**](string.md)|  | 
+ **signatures** | [**List<string>**](string.md)| The files to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **signatureRequestMessage** | **string**|  | [optional] 
  **templateId** | **string**|  | [optional] 
 
@@ -385,7 +391,7 @@ Requires the Sealer Admin Role or the Sealer User Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -395,10 +401,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -421,7 +428,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -450,7 +457,7 @@ Used to regroup contracts.                Requires the Sealer Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -460,11 +467,12 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -488,7 +496,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -517,7 +525,7 @@ Cannot be deleted if the contract was signed by at least one person.            
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -527,10 +535,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -552,7 +561,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contractId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -581,7 +590,7 @@ Cannot be deleted if it has linked contracts.                Requires the Sealer
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -591,10 +600,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -616,7 +626,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -645,7 +655,7 @@ A status defines if the contract is signed, partially signed, currently being si
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -655,9 +665,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -681,7 +692,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -706,11 +717,13 @@ No authorization required
 
 [SIGNATURES] Get all signatures of the authenticated user’s
 
+
+
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -720,9 +733,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -746,7 +760,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -777,7 +791,7 @@ Requires the Sealer Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -787,9 +801,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -813,7 +828,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -844,7 +859,7 @@ Require the Sealer Admin Role or Sealer User Role
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -854,9 +869,10 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -880,7 +896,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -911,7 +927,7 @@ Requires the Sealer Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -921,10 +937,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -949,13 +966,77 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
 ### Return type
 
 [**List<Contract>**](Contract.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getlinktodownloadoriginalfile"></a>
+# **GetLinkToDownloadOriginalFile**
+> string GetLinkToDownloadOriginalFile (string fileId, string productId, string xApiKey)
+
+[CONTRACTS] Give a link to download the file uploaded to the gcloud bucket
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mantle.lib.Api;
+using mantle.lib.Client;
+using mantle.lib.Model;
+
+namespace Example
+{
+    public class GetLinkToDownloadOriginalFileExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new SealerApi();
+            var fileId = fileId_example;  // string | 
+            var productId = productId_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
+
+            try
+            {
+                // [CONTRACTS] Give a link to download the file uploaded to the gcloud bucket
+                string result = apiInstance.GetLinkToDownloadOriginalFile(fileId, productId, xApiKey);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SealerApi.GetLinkToDownloadOriginalFile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileId** | **string**|  | 
+ **productId** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
+
+### Return type
+
+**string**
 
 ### Authorization
 
@@ -980,7 +1061,7 @@ Requires the Sealer Admin Role.
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -990,10 +1071,11 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1016,7 +1098,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 
@@ -1045,7 +1127,7 @@ Requires to be authenticated to the platform.  The original contract and signatu
 ```csharp
 using System;
 using System.Diagnostics;
-using mantle.lib.Mantle.lib;
+using mantle.lib.Api;
 using mantle.lib.Client;
 using mantle.lib.Model;
 
@@ -1055,13 +1137,14 @@ namespace Example
     {
         public void main()
         {
+            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var signature = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var contract = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var reuseLastSignature = true;  // bool? | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string | 
+            var xApiKey = xApiKey_example;  // string |  (default to )
 
             try
             {
@@ -1086,7 +1169,7 @@ Name | Type | Description  | Notes
  **contract** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **reuseLastSignature** | **bool?**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | 
+ **xApiKey** | **string**|  | [default to ]
 
 ### Return type
 

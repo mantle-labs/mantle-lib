@@ -4,8 +4,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RecipientDisplayName** | **string** |  | 
-**OwnedId** | **string** |  | [optional] 
+**OwnedDisplayName** | **string** |  | [optional] 
 **Amount** | **int?** |  | 
+**MetaData** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
