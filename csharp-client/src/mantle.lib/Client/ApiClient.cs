@@ -60,17 +60,17 @@ namespace mantle.lib.Client
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default configuration and base path (http://localhost:5000/).
+        /// with default configuration and base path (http://develop.api.mantleblockchain.com/).
         /// </summary>
         public ApiClient()
         {
             Configuration = Configuration.Default;
-            RestClient = new RestClient("http://localhost:5000/");
+            RestClient = new RestClient("http://develop.api.mantleblockchain.com/");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (http://localhost:5000/).
+        /// with default base path (http://develop.api.mantleblockchain.com/).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config = null)
@@ -80,7 +80,7 @@ namespace mantle.lib.Client
             else
                 Configuration = config;
 
-            RestClient = new RestClient("http://localhost:5000/");
+            RestClient = new RestClient("http://develop.api.mantleblockchain.com/");
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace mantle.lib.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "http://localhost:5000/")
+        public ApiClient(String basePath = "http://develop.api.mantleblockchain.com/")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");

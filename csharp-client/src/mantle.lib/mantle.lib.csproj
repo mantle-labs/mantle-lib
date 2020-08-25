@@ -24,7 +24,7 @@ limitations under the License.
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8161C5A8-E8B8-4609-9694-F0BECD43543F}</ProjectGuid>
+    <ProjectGuid>{FE53E0F3-859C-4051-B2A0-60396AF081FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mantle.lib</RootNamespace>
