@@ -8,3 +8,6 @@ java -jar ./swagger-codegen-cli.jar generate -i https://develop.api.mantleblockc
 
 
 #need to push it to nugget after
+#mono nuget.exe pack src/mantle.lib/mantle.lib.nuspec -Version 1.3.1
+#dotnet push
+

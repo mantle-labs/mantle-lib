@@ -2,198 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eefd8b77-43ed-4eae-a964-4a618102aa01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ApiKeysApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ApiKeysApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/AuthenticationApi.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Bill.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/BillingApi.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/BunkerApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/BunkerApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CreateEnttityRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CreateProductRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/DetailedAssetBalance.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/InvitationsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/InvitationsApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/KeeperApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/KeeperApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ProductUser.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ProductsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ProductsApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/SealerApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SealerApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/SignUpUserRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TrackerApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TrackerApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TrackerStatsResponse.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TrackerTransactionRevertRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UpdateProductRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UserForgotPasswordConfirmationRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UserForgotPasswordRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UserLoginRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UserLoginResponse.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UserSignUpConfirmationRequest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/UsersApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/UsersApi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git_push.sh" beforeDir="false" afterPath="$PROJECT_DIR$/git_push.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantle.lib.sln" beforeDir="false" afterPath="$PROJECT_DIR$/mantle.lib.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mono_nunit_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/mono_nunit_test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/ApiKeysApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/ApiKeysApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/BunkerApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/BunkerApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/InvitationsApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/InvitationsApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/KeeperApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/KeeperApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/ProductsApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/ProductsApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/SealerApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/SealerApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/TrackerApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/TrackerApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Api/UsersApiTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/Api/UsersApiTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/AnonymousApiKeyResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/AssetBalanceTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/AssetIssueResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/AssetTransactionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/BatchTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/BreadcrumbingCompareResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/BunkerCreateFileRespTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/BunkerFileRespTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/ContractSignatureDiffResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/ContractTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/CreateApiKeyRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/CreateEntityRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/EditUserRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/FileTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/HttpExposedErrorTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/IFormFileTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/InvitationCreateRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/InvitationSignUpResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/InvitationTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/IssuedBatchTransactionsResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/IssuedBatchesResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/KeeperFileTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/KeeperFileVersionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/KeeperFolderCreateRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/KeeperFolderTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/KeeperProductSubscriptionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/MultiStatusResultTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/NonUserResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/NonUserTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/ProductMenuOptionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/ProductSubscriptionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/SealerBreadcrumbingCompareResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/SealerProductSubscriptionSettingsTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/SealerProductSubscriptionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/SignatureTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/SubAssetIdentityTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TemplateTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerAssetCreateRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerAssetIssueBulkRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerAssetIssueRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerAssetIssueResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerAssetTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerBatchTransferBulkRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerBatchTransferBulkResponseTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerBatchTransferRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerMultiAssetCreateRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerMultiAssetTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerProductSubscriptionTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/TrackerTransferRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/UpdateEntityRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/UpdateKeeperProductRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/UpdateSealerProductRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/UpdateTrackerProductRequestTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/Model/UserTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/mantle.lib.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/mantle.lib.Test.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib.Test/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib.Test/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/ApiKeysApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/ApiKeysApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/AuthenticationApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/BillingApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/BunkerApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/BunkerApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/InvitationsApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/InvitationsApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/KeeperApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/KeeperApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/ProductsApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/ProductsApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/SealerApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/SealerApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/TrackerApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/TrackerApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Api/UsersApi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Api/UsersApi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/ApiClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/ApiClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/ApiException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/ApiException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/ApiResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/ApiResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/Configuration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/Configuration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/ExceptionFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/ExceptionFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Client/IApiAccessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Client/IApiAccessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/ApiKeysApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/BillingApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/InvitationsApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/KeeperApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/ProductsApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/SealerApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/TrackerApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Mantle.lib/UsersApi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/AnonymousApiKeyResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/AnonymousApiKeyResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/AssetBalance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/AssetBalance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/AssetIssueResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/AssetIssueResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/AssetTransaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/AssetTransaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Batch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/Batch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Bill.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/BreadcrumbingCompareResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/BreadcrumbingCompareResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/BunkerCreateFileResp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/BunkerCreateFileResp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/BunkerFileResp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/BunkerFileResp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Contract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/Contract.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/ContractSignatureDiffResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/ContractSignatureDiffResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/CreateApiKeyRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/CreateApiKeyRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/CreateEntityRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/CreateEntityRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/CreateEnttityRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/CreateProductRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/DetailedAssetBalance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/EditUserRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/EditUserRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/File.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/HttpExposedError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/HttpExposedError.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/IFormFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/IFormFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Invitation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/Invitation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/InvitationCreateRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/InvitationCreateRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/InvitationSignUpResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/InvitationSignUpResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/IssuedBatchTransactionsResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/IssuedBatchTransactionsResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/IssuedBatchesResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/IssuedBatchesResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFileVersion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFileVersion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFolderCreateRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperFolderCreateRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperProductSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/KeeperProductSubscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/MultiStatusResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/MultiStatusResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/NonUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/NonUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/NonUserResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/NonUserResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/ProductMenuOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/ProductMenuOption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/ProductSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/ProductSubscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/ProductUser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/SealerBreadcrumbingCompareResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/SealerBreadcrumbingCompareResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/SealerProductSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/SealerProductSubscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/SealerProductSubscriptionSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/SealerProductSubscriptionSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/SignUpUserRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Signature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/Signature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/SubAssetIdentity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/SubAssetIdentity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/Template.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/Template.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetCreateRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetCreateRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueBulkRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueBulkRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerAssetIssueResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferBulkRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferBulkRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferBulkResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferBulkResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerBatchTransferRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerMultiAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerMultiAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerMultiAssetCreateRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerMultiAssetCreateRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerProductSubscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerProductSubscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerStatsResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerTransactionRevertRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerTransferRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/TrackerTransferRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateEntityRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateEntityRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateKeeperProductRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateKeeperProductRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateProductRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateSealerProductRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateSealerProductRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateTrackerProductRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/UpdateTrackerProductRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/Model/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UserForgotPasswordConfirmationRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UserForgotPasswordRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UserLoginRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UserLoginResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/Model/UserSignUpConfirmationRequest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/mantle.lib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/mantle.lib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mantle.lib/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generate_csharp_sdk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../generate_csharp_sdk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mantle.lib/mantle.lib.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/src/mantle.lib/mantle.lib.nuspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,13 +54,14 @@
       <option name="presentableId" value="Default" />
       <updated>1598464192919</updated>
       <workItem from="1598464195955" duration="2771000" />
+      <workItem from="1598474433849" duration="689000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
