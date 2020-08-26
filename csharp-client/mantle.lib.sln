@@ -2,26 +2,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mantle.lib", "src\mantle.lib\mantle.lib.csproj", "{FE53E0F3-859C-4051-B2A0-60396AF081FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mantle.lib", "src\mantle.lib\mantle.lib.csproj", "{B0AB99E0-56F5-465D-9586-C66885CCEEAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mantle.lib.Test", "src\mantle.lib.Test\mantle.lib.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
 Global
-GlobalSection(SolutionConfigurationPlatforms) = preSolution
-Debug|Any CPU = Debug|Any CPU
-Release|Any CPU = Release|Any CPU
-EndGlobalSection
-GlobalSection(ProjectConfigurationPlatforms) = postSolution
-{FE53E0F3-859C-4051-B2A0-60396AF081FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{FE53E0F3-859C-4051-B2A0-60396AF081FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{FE53E0F3-859C-4051-B2A0-60396AF081FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{FE53E0F3-859C-4051-B2A0-60396AF081FF}.Release|Any CPU.Build.0 = Release|Any CPU
-{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
-EndGlobalSection
-GlobalSection(SolutionProperties) = preSolution
-HideSolutionNode = FALSE
-EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0AB99E0-56F5-465D-9586-C66885CCEEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AB99E0-56F5-465D-9586-C66885CCEEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AB99E0-56F5-465D-9586-C66885CCEEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AB99E0-56F5-465D-9586-C66885CCEEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 EndGlobal

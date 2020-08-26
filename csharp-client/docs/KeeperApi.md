@@ -1,6 +1,6 @@
 # mantle.lib.Api.KeeperApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -43,13 +43,12 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var versionId = versionId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -75,7 +74,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -115,12 +114,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -145,7 +143,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -185,12 +183,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -215,7 +212,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -255,13 +252,12 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var accuracy = accuracy_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var folderId = folderId_example;  // string |  (optional) 
 
             try
@@ -287,7 +283,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **folderId** | **string**|  | [optional] 
 
 ### Return type
@@ -327,10 +323,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new KeeperFolderCreateRequest(); // KeeperFolderCreateRequest |  (optional) 
 
             try
@@ -353,7 +348,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**KeeperFolderCreateRequest**](KeeperFolderCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -393,12 +388,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -422,7 +416,7 @@ Name | Type | Description  | Notes
  **fileId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -461,11 +455,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -487,7 +480,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -526,11 +519,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
             var folderId = folderId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -552,7 +544,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
  **folderId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -591,12 +583,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var accuracy = accuracy_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var folderId = folderId_example;  // string |  (optional) 
 
             try
@@ -621,7 +612,7 @@ Name | Type | Description  | Notes
  **accuracy** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **folderId** | **string**|  | [optional] 
 
 ### Return type
@@ -661,10 +652,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var displayName = displayName_example;  // string |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -690,7 +680,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **displayName** | **string**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -733,10 +723,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var name = name_example;  // string |  (optional) 
 
             try
@@ -759,7 +748,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **name** | **string**|  | [optional] 
 
 ### Return type
@@ -799,11 +788,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -826,7 +814,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -865,11 +853,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -892,7 +879,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -931,11 +918,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var productId = productId_example;  // string | 
             var folderId = folderId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -958,7 +944,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
  **folderId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -995,11 +981,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new KeeperApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var originalFileId = originalFileId_example;  // string |  (optional) 
 
             try
@@ -1023,7 +1008,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **originalFileId** | **string**|  | [optional] 
 
 ### Return type

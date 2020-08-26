@@ -1,6 +1,6 @@
 # mantle.lib.Api.SealerApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -45,12 +45,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -75,7 +74,7 @@ Name | Type | Description  | Notes
  **contractId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -115,12 +114,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -145,7 +143,7 @@ Name | Type | Description  | Notes
  **contractId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -185,12 +183,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var signatureId = signatureId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -215,7 +212,7 @@ Name | Type | Description  | Notes
  **signatureId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -255,12 +252,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var mustGenerateCompareResult = true;  // bool? |  (optional) 
 
             try
@@ -285,7 +281,7 @@ Name | Type | Description  | Notes
  **templateId** | **string**|  | 
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **mustGenerateCompareResult** | **bool?**|  | [optional] 
 
 ### Return type
@@ -325,14 +321,13 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var signerEmails = new List<string>(); // List<string> | 
             var signatures = new List<string>(); // List<string> | The files to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var signatureRequestMessage = signatureRequestMessage_example;  // string |  (optional) 
             var templateId = templateId_example;  // string |  (optional) 
 
@@ -357,10 +352,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
- **signerEmails** | [**List<string>**](string.md)|  | 
- **signatures** | [**List<string>**](string.md)| The files to upload. How http file upload works: https://goo.gl/UYQ2nX | 
+ **signerEmails** | [**List&lt;string&gt;**](string.md)|  | 
+ **signatures** | [**List&lt;string&gt;**](string.md)| The files to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **signatureRequestMessage** | **string**|  | [optional] 
  **templateId** | **string**|  | [optional] 
 
@@ -401,11 +396,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -428,7 +422,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -467,12 +461,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var file = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var displayName = displayName_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -496,7 +489,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **displayName** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -535,11 +528,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -561,7 +553,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contractId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -600,11 +592,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -626,7 +617,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -665,10 +656,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -692,7 +682,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -717,8 +707,6 @@ No authorization required
 
 [SIGNATURES] Get all signatures of the authenticated user’s
 
-
-
 ### Example
 ```csharp
 using System;
@@ -733,10 +721,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -760,7 +747,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -801,10 +788,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -828,7 +814,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -869,10 +855,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -896,7 +881,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -937,11 +922,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
 
@@ -966,7 +950,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
 
@@ -1005,11 +989,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var fileId = fileId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1032,7 +1015,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1071,11 +1054,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var templateId = templateId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1098,7 +1080,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **templateId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1137,14 +1119,13 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new SealerApi();
             var contractId = contractId_example;  // string | 
             var signature = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var contract = new System.IO.Stream(); // System.IO.Stream | The file to upload. How http file upload works: https://goo.gl/UYQ2nX
             var reuseLastSignature = true;  // bool? | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1169,7 +1150,7 @@ Name | Type | Description  | Notes
  **contract** | **System.IO.Stream**| The file to upload. How http file upload works: https://goo.gl/UYQ2nX | 
  **reuseLastSignature** | **bool?**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 

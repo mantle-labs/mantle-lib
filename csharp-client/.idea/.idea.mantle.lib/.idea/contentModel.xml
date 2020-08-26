@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_mantle.lib.303994874.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="mantle.lib.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src/mantle.lib" t="IncludeRecursive">
+        <e p="Api" t="Include">
+          <e p="ApiKeysApi.cs" t="Include" />
+          <e p="BunkerApi.cs" t="Include" />
+          <e p="InvitationsApi.cs" t="Include" />
+          <e p="KeeperApi.cs" t="Include" />
+          <e p="ProductsApi.cs" t="Include" />
+          <e p="SealerApi.cs" t="Include" />
+          <e p="TrackerApi.cs" t="Include" />
+          <e p="UsersApi.cs" t="Include" />
+        </e>
+        <e p="Client" t="Include">
+          <e p="ApiClient.cs" t="Include" />
+          <e p="ApiException.cs" t="Include" />
+          <e p="ApiResponse.cs" t="Include" />
+          <e p="Configuration.cs" t="Include" />
+          <e p="ExceptionFactory.cs" t="Include" />
+          <e p="GlobalConfiguration.cs" t="Include" />
+          <e p="IApiAccessor.cs" t="Include" />
+          <e p="IReadableConfiguration.cs" t="Include" />
+          <e p="SwaggerDateConverter.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="AnonymousApiKeyResponse.cs" t="Include" />
+          <e p="AssetBalance.cs" t="Include" />
+          <e p="AssetIssueResponse.cs" t="Include" />
+          <e p="AssetTransaction.cs" t="Include" />
+          <e p="Batch.cs" t="Include" />
+          <e p="BreadcrumbingCompareResponse.cs" t="Include" />
+          <e p="BunkerCreateFileResp.cs" t="Include" />
+          <e p="BunkerFileResp.cs" t="Include" />
+          <e p="Contract.cs" t="Include" />
+          <e p="ContractSignatureDiffResponse.cs" t="Include" />
+          <e p="CreateApiKeyRequest.cs" t="Include" />
+          <e p="CreateEntityRequest.cs" t="Include" />
+          <e p="EditUserRequest.cs" t="Include" />
+          <e p="File.cs" t="Include" />
+          <e p="HttpExposedError.cs" t="Include" />
+          <e p="IFormFile.cs" t="Include" />
+          <e p="Invitation.cs" t="Include" />
+          <e p="InvitationCreateRequest.cs" t="Include" />
+          <e p="InvitationSignUpResponse.cs" t="Include" />
+          <e p="IssuedBatchTransactionsResponse.cs" t="Include" />
+          <e p="IssuedBatchesResponse.cs" t="Include" />
+          <e p="KeeperFile.cs" t="Include" />
+          <e p="KeeperFileVersion.cs" t="Include" />
+          <e p="KeeperFolder.cs" t="Include" />
+          <e p="KeeperFolderCreateRequest.cs" t="Include" />
+          <e p="KeeperProductSubscription.cs" t="Include" />
+          <e p="MultiStatusResult.cs" t="Include" />
+          <e p="NonUser.cs" t="Include" />
+          <e p="NonUserResponse.cs" t="Include" />
+          <e p="ProductMenuOption.cs" t="Include" />
+          <e p="ProductSubscription.cs" t="Include" />
+          <e p="SealerBreadcrumbingCompareResponse.cs" t="Include" />
+          <e p="SealerProductSubscription.cs" t="Include" />
+          <e p="SealerProductSubscriptionSettings.cs" t="Include" />
+          <e p="Signature.cs" t="Include" />
+          <e p="SubAssetIdentity.cs" t="Include" />
+          <e p="Template.cs" t="Include" />
+          <e p="TrackerAsset.cs" t="Include" />
+          <e p="TrackerAssetCreateRequest.cs" t="Include" />
+          <e p="TrackerAssetIssueBulkRequest.cs" t="Include" />
+          <e p="TrackerAssetIssueRequest.cs" t="Include" />
+          <e p="TrackerAssetIssueResponse.cs" t="Include" />
+          <e p="TrackerBatchTransferBulkRequest.cs" t="Include" />
+          <e p="TrackerBatchTransferBulkResponse.cs" t="Include" />
+          <e p="TrackerBatchTransferRequest.cs" t="Include" />
+          <e p="TrackerMultiAsset.cs" t="Include" />
+          <e p="TrackerMultiAssetCreateRequest.cs" t="Include" />
+          <e p="TrackerProductSubscription.cs" t="Include" />
+          <e p="TrackerTransferRequest.cs" t="Include" />
+          <e p="UpdateEntityRequest.cs" t="Include" />
+          <e p="UpdateKeeperProductRequest.cs" t="Include" />
+          <e p="UpdateSealerProductRequest.cs" t="Include" />
+          <e p="UpdateTrackerProductRequest.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="mantle.lib.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+      <e p="src/mantle.lib.Test" t="IncludeRecursive">
+        <e p="Api" t="Include">
+          <e p="ApiKeysApiTests.cs" t="Include" />
+          <e p="BunkerApiTests.cs" t="Include" />
+          <e p="InvitationsApiTests.cs" t="Include" />
+          <e p="KeeperApiTests.cs" t="Include" />
+          <e p="ProductsApiTests.cs" t="Include" />
+          <e p="SealerApiTests.cs" t="Include" />
+          <e p="TrackerApiTests.cs" t="Include" />
+          <e p="UsersApiTests.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="mantle.lib.Test.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

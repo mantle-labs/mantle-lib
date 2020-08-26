@@ -1,6 +1,6 @@
 # mantle.lib.Api.TrackerApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -61,10 +61,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -87,7 +86,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -127,11 +126,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerBatchTransferRequest(); // TrackerBatchTransferRequest |  (optional) 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
@@ -155,7 +153,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerBatchTransferRequest**](TrackerBatchTransferRequest.md)|  | [optional] 
  **ownedDisplayName** | **string**|  | [optional] 
 
@@ -196,11 +194,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerTransferRequest(); // TrackerTransferRequest |  (optional) 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
@@ -225,7 +222,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerTransferRequest**](TrackerTransferRequest.md)|  | [optional] 
  **ownedDisplayName** | **string**|  | [optional] 
 
@@ -266,10 +263,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var requests = new List<TrackerBatchTransferBulkRequest>(); // List<TrackerBatchTransferBulkRequest> |  (optional) 
             var ownedId = ownedId_example;  // string |  (optional) 
 
@@ -293,8 +289,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
- **requests** | [**List<TrackerBatchTransferBulkRequest>**](TrackerBatchTransferBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | 
+ **requests** | [**List&lt;TrackerBatchTransferBulkRequest&gt;**](TrackerBatchTransferBulkRequest.md)|  | [optional] 
  **ownedId** | **string**|  | [optional] 
 
 ### Return type
@@ -332,10 +328,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new CreateEntityRequest(); // CreateEntityRequest |  (optional) 
 
             try
@@ -358,7 +353,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**CreateEntityRequest**](CreateEntityRequest.md)|  | [optional] 
 
 ### Return type
@@ -398,10 +393,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerMultiAssetCreateRequest(); // TrackerMultiAssetCreateRequest |  (optional) 
 
             try
@@ -424,7 +418,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerMultiAssetCreateRequest**](TrackerMultiAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -464,11 +458,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerBatchTransferRequest(); // TrackerBatchTransferRequest |  (optional) 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
@@ -492,7 +485,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerBatchTransferRequest**](TrackerBatchTransferRequest.md)|  | [optional] 
  **ownedDisplayName** | **string**|  | [optional] 
 
@@ -533,11 +526,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerTransferRequest(); // TrackerTransferRequest |  (optional) 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
@@ -562,7 +554,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerTransferRequest**](TrackerTransferRequest.md)|  | [optional] 
  **ownedDisplayName** | **string**|  | [optional] 
 
@@ -603,11 +595,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -629,7 +620,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -666,11 +657,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var id = id_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -692,7 +682,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -731,11 +721,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -757,7 +746,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -796,11 +785,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -823,7 +811,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -861,11 +849,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var id = id_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new UpdateEntityRequest(); // UpdateEntityRequest |  (optional) 
 
             try
@@ -888,7 +875,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**UpdateEntityRequest**](UpdateEntityRequest.md)|  | [optional] 
 
 ### Return type
@@ -928,11 +915,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerAssetCreateRequest(); // TrackerAssetCreateRequest |  (optional) 
 
             try
@@ -955,7 +941,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerAssetCreateRequest**](TrackerAssetCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -995,10 +981,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
             var assetDisplayNames = assetDisplayNames_example;  // string | Filter assets using their display names.  Example: Asset1,Asset2,Asset3 (optional) 
@@ -1023,7 +1008,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
  **assetDisplayNames** | **string**| Filter assets using their display names.  Example: Asset1,Asset2,Asset3 | [optional] 
@@ -1065,10 +1050,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var beforeDateTime = 2013-10-20T19:20:30+01:00;  // DateTime? |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -1094,7 +1078,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **beforeDateTime** | **DateTime?**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -1137,10 +1121,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var beforeDateTime = 2013-10-20T19:20:30+01:00;  // DateTime? |  (optional) 
             var limit = 56;  // int? |  (optional) 
             var offset = 56;  // int? |  (optional) 
@@ -1165,7 +1148,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **beforeDateTime** | **DateTime?**|  | [optional] 
  **limit** | **int?**|  | [optional] 
  **offset** | **int?**|  | [optional] 
@@ -1207,11 +1190,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1234,7 +1216,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1273,11 +1255,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
@@ -1301,7 +1282,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
@@ -1341,12 +1322,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var batchId = batchId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1370,7 +1350,7 @@ Name | Type | Description  | Notes
  **assetId** | **string**|  | 
  **batchId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1409,11 +1389,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var sortBy = sortBy_example;  // string |  (optional) 
             var sort = sort_example;  // string |  (optional) 
 
@@ -1438,7 +1417,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **sortBy** | **string**|  | [optional] 
  **sort** | **string**|  | [optional] 
 
@@ -1479,10 +1458,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var ownedDisplayName = ownedDisplayName_example;  // string |  (optional) 
 
             try
@@ -1505,7 +1483,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **ownedDisplayName** | **string**|  | [optional] 
 
 ### Return type
@@ -1545,11 +1523,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1572,7 +1549,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1611,12 +1588,11 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var batchId = batchId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1640,7 +1616,7 @@ Name | Type | Description  | Notes
  **assetId** | **string**|  | 
  **batchId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1679,11 +1655,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1706,7 +1681,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1743,10 +1718,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1768,7 +1742,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1807,11 +1781,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1834,7 +1807,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1873,11 +1846,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -1900,7 +1872,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -1939,11 +1911,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerAssetIssueRequest(); // TrackerAssetIssueRequest |  (optional) 
 
             try
@@ -1967,7 +1938,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerAssetIssueRequest**](TrackerAssetIssueRequest.md)|  | [optional] 
 
 ### Return type
@@ -2007,10 +1978,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var requests = new List<TrackerAssetIssueBulkRequest>(); // List<TrackerAssetIssueBulkRequest> |  (optional) 
 
             try
@@ -2033,8 +2003,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
- **requests** | [**List<TrackerAssetIssueBulkRequest>**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | 
+ **requests** | [**List&lt;TrackerAssetIssueBulkRequest&gt;**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -2073,11 +2043,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var assetId = assetId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new TrackerAssetIssueRequest(); // TrackerAssetIssueRequest |  (optional) 
 
             try
@@ -2100,7 +2069,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assetId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**TrackerAssetIssueRequest**](TrackerAssetIssueRequest.md)|  | [optional] 
 
 ### Return type
@@ -2140,10 +2109,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var requests = new List<TrackerAssetIssueBulkRequest>(); // List<TrackerAssetIssueBulkRequest> |  (optional) 
 
             try
@@ -2166,8 +2134,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
- **requests** | [**List<TrackerAssetIssueBulkRequest>**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
+ **xApiKey** | **string**|  | 
+ **requests** | [**List&lt;TrackerAssetIssueBulkRequest&gt;**](TrackerAssetIssueBulkRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -2206,11 +2174,10 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new TrackerApi();
             var transactionId = transactionId_example;  // string | 
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -2232,7 +2199,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transactionId** | **string**|  | 
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 

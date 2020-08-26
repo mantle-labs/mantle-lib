@@ -1,6 +1,6 @@
 # mantle.lib.Api.InvitationsApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,9 +32,8 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new InvitationsApi();
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new InvitationCreateRequest(); // InvitationCreateRequest |  (optional) 
 
             try
@@ -56,7 +55,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**InvitationCreateRequest**](InvitationCreateRequest.md)|  | [optional] 
 
 ### Return type
@@ -96,10 +95,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new InvitationsApi();
             var invitationId = invitationId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -120,7 +118,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invitationId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -159,9 +157,8 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new InvitationsApi();
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -182,7 +179,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -205,8 +202,6 @@ No authorization required
 
 Get an invitation's details
 
-
-
 ### Example
 ```csharp
 using System;
@@ -221,10 +216,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new InvitationsApi();
             var invitationId = invitationId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -246,7 +240,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invitationId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # mantle.lib.Api.ApiKeysApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -31,9 +31,8 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ApiKeysApi();
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new CreateApiKeyRequest(); // CreateApiKeyRequest |  (optional) 
 
             try
@@ -54,7 +53,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**CreateApiKeyRequest**](CreateApiKeyRequest.md)|  | [optional] 
 
 ### Return type
@@ -94,10 +93,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ApiKeysApi();
             var userId = userId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -118,7 +116,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -157,9 +155,8 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ApiKeysApi();
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -180,7 +177,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 

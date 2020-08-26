@@ -1,6 +1,6 @@
 # mantle.lib.Api.ProductsApi
 
-All URIs are relative to *http://develop.api.mantleblockchain.com/*
+All URIs are relative to *http://develop.api.mantleblockchain.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,8 +17,6 @@ Method | HTTP request | Description
 
 Get the products for the authenticated user
 
-
-
 ### Example
 ```csharp
 using System;
@@ -33,9 +31,8 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ProductsApi();
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -56,7 +53,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -95,10 +92,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
 
             try
             {
@@ -120,7 +116,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
 
 ### Return type
 
@@ -159,10 +155,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new UpdateKeeperProductRequest(); // UpdateKeeperProductRequest |  (optional) 
 
             try
@@ -185,7 +180,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**UpdateKeeperProductRequest**](UpdateKeeperProductRequest.md)|  | [optional] 
 
 ### Return type
@@ -225,10 +220,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new UpdateSealerProductRequest(); // UpdateSealerProductRequest |  (optional) 
 
             try
@@ -251,7 +245,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**UpdateSealerProductRequest**](UpdateSealerProductRequest.md)|  | [optional] 
 
 ### Return type
@@ -291,10 +285,9 @@ namespace Example
     {
         public void main()
         {
-            
             var apiInstance = new ProductsApi();
             var productId = productId_example;  // string | 
-            var xApiKey = xApiKey_example;  // string |  (default to )
+            var xApiKey = xApiKey_example;  // string | 
             var request = new UpdateTrackerProductRequest(); // UpdateTrackerProductRequest |  (optional) 
 
             try
@@ -317,7 +310,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productId** | **string**|  | 
- **xApiKey** | **string**|  | [default to ]
+ **xApiKey** | **string**|  | 
  **request** | [**UpdateTrackerProductRequest**](UpdateTrackerProductRequest.md)|  | [optional] 
 
 ### Return type
