@@ -120,7 +120,7 @@ if [ $? -eq 0 ]; then
 else
 	print_error "Cannot generate csharp sdk: $Gen_error\n"
 fi
-removing swagger-codegen-cli
+#removing swagger-codegen-cli
 print_info "Removing swagger-codegen-cli.jar"
 rm swagger-codegen-cli.jar
 if [ $? -eq 0 ]; then
