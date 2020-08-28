@@ -43,7 +43,7 @@ if [ $# -eq 0 ]; then
 fi
 Release_note="Minor update"
 Path=""
-VERSION="1.0.0"
+Version="1.0.0"
 
 while [ $# -ne 0 ]; do
 	key=$1
@@ -93,6 +93,12 @@ if [ -z $Path ]; then
 	exit 1
 fi
 
+#removing csharp-client directory if it exist
+if [ -d "csharp-client" ]; then 
+	print_info "Removing csharp-client directory"
+	rm -Rf csharp-client; 
+fi
+
 #Installing swagger-codegen-cli
 #You can download the version you want at https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/
 print_info "Downloading Swagger-codegen-cli\n"
@@ -108,14 +114,13 @@ fi
 
 #Generating client sdk
 print_info "Generating client sdk for c#"
-cd csharp
-Gen_Error=$(java -jar swagger-codegen-cli.jar generate -i https://develop.api.mantleblockchain.com/swagger/v1/swagger.json -l csharp -o mantle.lib -DapiTest=false -DmodelTests=false -DpackageName='mantle.lib' --release-note '$Release_note' -o ./csharp-client/)
+Gen_Error=$(java -jar swagger-codegen-cli.jar generate -i https://develop.api.mantleblockchain.com/swagger/v1/swagger.json -l csharp -o csharp-client -DapiTest=false -DmodelTests=false -DpackageName='mantle.lib' --release-note '$Release_note')
 if [ $? -eq 0 ]; then
 	print_success "Generation successful\n"
 else
 	print_error "Cannot generate csharp sdk: $Gen_error\n"
 fi
-#removing swagger-codegen-cli
+removing swagger-codegen-cli
 print_info "Removing swagger-codegen-cli.jar"
 rm swagger-codegen-cli.jar
 if [ $? -eq 0 ]; then
@@ -144,7 +149,14 @@ print_info "Nuget installed successfully"
 print_info "Trying to build csharp project."
 cd csharp-client
 /bin/sh build.sh
-
+print_success "project was successfully built."
+rm src/mantle.lib/mantle.lib.nuspec
+mkdir src/mantle.lib/bin && mkdir src/mantle.lib/bin/Debug
+mv bin/* src/mantle.lib/bin/Debug
+print_info "Generating .nupkg"
+nuget pack src/mantle.lib/mantle.lib.csproj
+print_success "package is generated"
+cp mantle.lib.1.0.0.nupkg /home/nicolas/Documents/mantle/mantle-lib-test/mantle.lib.$Version.nupkg
 
 
 
