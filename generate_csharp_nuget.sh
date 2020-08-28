@@ -108,6 +108,7 @@ fi
 
 #Generating client sdk
 print_info "Generating client sdk for c#"
+cd csharp
 Gen_Error=$(java -jar swagger-codegen-cli.jar generate -i https://develop.api.mantleblockchain.com/swagger/v1/swagger.json -l csharp -o mantle.lib -DapiTest=false -DmodelTests=false -DpackageName='mantle.lib' --release-note '$Release_note' -o ./csharp-client/)
 if [ $? -eq 0 ]; then
 	print_success "Generation successful\n"
@@ -122,6 +123,28 @@ if [ $? -eq 0 ]; then
 else
 	print_error "Cannot remove swagger-codegen-cli.jar"
 fi
+
+#installing mono
+print_info "Downloading mono"
+sudo apt install gnupg ca-certificates
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+print_info "Installing mono"
+sudo apt install mono-devel
+print_success "Mono was installed successfully."
+
+#Downloading nuget from microsoft.
+print_info "Downloading nuget from microsoft."
+sudo curl -o /usr/local/bin/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+alias nuget="mono /usr/local/bin/nuget.exe"
+print_info "Nuget installed successfully"
+
+#Trying to build the csharp project
+print_info "Trying to build csharp project."
+cd csharp-client
+/bin/sh build.sh
+
 
 
 
