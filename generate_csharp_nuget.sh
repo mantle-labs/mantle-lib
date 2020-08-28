@@ -108,13 +108,21 @@ fi
 
 #Generating client sdk
 print_info "Generating client sdk for c#"
-#Gen_Error=$(java -jar ./swagger-codegen-cli.jar generate -i httpss://develop.api.mantleblockchain.com/swagger/v1/swagger.json -l csharp -o mantle.lib -DapiTest=false -DmodelTests=false -DpackageName='mantle.lib' --release-note $Release_note -o ./csharp-client/)
+Gen_Error=$(java -jar swagger-codegen-cli.jar generate -i https://develop.api.mantleblockchain.com/swagger/v1/swagger.json -l csharp -o mantle.lib -DapiTest=false -DmodelTests=false -DpackageName='mantle.lib' --release-note '$Release_note' -o ./csharp-client/)
 if [ $? -eq 0 ]; then
 	print_success "Generation successful\n"
 else
-	print_error "Cannot generate csharp sdk\n"
-	print_error $Gen_Error
+	print_error "Cannot generate csharp sdk: $Gen_error\n"
 fi
+#removing swagger-codegen-cli
+print_info "Removing swagger-codegen-cli.jar"
+rm swagger-codegen-cli.jar
+if [ $? -eq 0 ]; then
+	print_success "swagger-codegen-cli.jar is removed"
+else
+	print_error "Cannot remove swagger-codegen-cli.jar"
+fi
+
 
 
 
