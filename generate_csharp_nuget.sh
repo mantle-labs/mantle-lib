@@ -130,6 +130,7 @@ else
 fi
 
 #installing mono
+## If you have error with mono be sure to completly remove it before running this script
 print_info "Downloading mono"
 sudo apt install gnupg ca-certificates
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -150,17 +151,9 @@ print_info "Trying to build csharp project."
 cd csharp-client
 /bin/sh build.sh
 print_success "project was successfully built."
-rm src/mantle.lib/mantle.lib.nuspec
+#rm src/mantle.lib/mantle.lib.nuspec THIS HAVE WIERD BEHAVIOR
 mkdir src/mantle.lib/bin && mkdir src/mantle.lib/bin/Debug
 mv bin/* src/mantle.lib/bin/Debug
 print_info "Generating .nupkg"
-nuget pack src/mantle.lib/mantle.lib.csproj
+nuget pack src/mantle.lib/mantle.lib.csproj -version $Version
 print_success "package is generated"
-cp mantle.lib.1.0.0.nupkg /home/nicolas/Documents/mantle/mantle-lib-test/mantle.lib.$Version.nupkg
-
-
-
-
-#need to push it to nugget after
-#mono nuget.exe pack src/mantle.lib/mantle.lib.nuspec -Version 1.3.1
-#dotnet push
